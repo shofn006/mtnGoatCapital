@@ -212,3 +212,14 @@ footer {
 .section--dark .engagements-grid img {
   filter: brightness(0) invert(1);
 }
+.hero-logo-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 600px;  /* adjust this max-width as needed */
+  width: 80%;        /* scales down responsively */
+  height: auto;
+  z-index: 2;        /* sits above the overlay */
+  pointer-events: none;
+}
