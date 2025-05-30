@@ -22,10 +22,37 @@ header {
   padding: 10px 40px;
   z-index: 1000;
 }
+
+/* branding: logo + title */
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
 .site-logo {
   max-height: 50px;
   width: auto;
 }
+.site-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.mgmt-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.goat-icon {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 24px;
+}
+
+/* NAV */
 nav ul {
   list-style: none;
   display: flex;
@@ -47,33 +74,12 @@ nav a {
   margin-top: 80px; /* push below fixed header */
 }
 .hero-slide {
-  position: relative;
   overflow: hidden;
 }
 .hero-slide img {
   display: block;
   width: 100%;
   height: auto;
-}
-.hero-text.triangle {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 180px;
-  height: 180px;
-  background: rgba(0, 0, 0, 0.6);
-  clip-path: polygon(0 0, 100% 0, 50% 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero-text.triangle span {
-  color: #fff;
-  font-size: 1rem;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 1.2;
-  padding: 0 10px;
 }
 
 /* SECTIONS */
