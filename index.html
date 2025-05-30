@@ -33,20 +33,16 @@
     <a class="login" href="#">INVESTOR LOGIN</a>
   </header>
 
-  <!-- HERO BANNER 1 -->
-  <section class="hero-container">
-    <div class="hero-slide">
-      <img src="images/banner-1.jpg" alt="Banner 1" />
-      <div class="hero-text-stacked">
-        <div class="line1">mtn.</div>
-        <div class="line2">GOAT</div>
-        <div class="line3">
-          CAPITAL
-          <span class="mgmt-line">
-            mgmt.
-            <img src="images/goat-icon-white.png" alt="Goat Icon" class="goat-icon-inline" />
-          </span>
-        </div>
+  <!-- HERO BANNER 1 (FULL WIDTH) -->
+  <section class="hero full-bleed">
+    <img src="images/banner-1.jpg" alt="Banner 1" class="hero-bg" />
+    <div class="hero-overlay"></div>
+    <div class="hero-text">
+      <div class="line1">mtn.</div>
+      <div class="line2">GOAT</div>
+      <div class="line3">
+        CAPITAL
+        <span class="mgmt"><img src="images/goat-icon-white.png" alt="" /> mgmt.</span>
       </div>
     </div>
   </section>
@@ -60,18 +56,18 @@
     </section>
 
     <!-- APPROACH GRID (3×3) -->
-    <section id="approach" class="section">
+    <section id="approach" class="section alt-bg">
       <h2>APPROACH</h2>
-      <div class="approach-grid">
-        <div><img src="images/acquisition-2.png" alt=""><div class="caption">ADD-ON ACQUISITION</div></div>
-        <div><img src="images/network-2.png" alt=""><div class="caption">NETWORK & INDUSTRY EXPERTISE</div></div>
-        <div><img src="images/partnership-2.png" alt=""><div class="caption">STRATEGIC PARTNERSHIPS</div></div>
-        <div><img src="images/business-development-2.png" alt=""><div class="caption">BUSINESS DEVELOPMENT</div></div>
-        <div><img src="images/product-expansion-2.png" alt=""><div class="caption">PRODUCT & SERVICE EXPANSION</div></div>
-        <div><img src="images/supply-2.png" alt=""><div class="caption">SUPPLY PROCUREMENT</div></div>
-        <div><img src="images/geography-2.png" alt=""><div class="caption">GEOGRAPHIC EXPANSION</div></div>
-        <div><img src="images/process-improvements-2.png" alt=""><div class="caption">PROCESS IMPROVEMENTS</div></div>
-        <div><img src="images/systems-upgrades-2.png" alt=""><div class="caption">SYSTEM UPGRADES</div></div>
+      <div class="icon-grid">
+        <div><img src="images/acquisition-2.png" alt="add-on acquisition"><div class="caption">ADD-ON ACQUISITION</div></div>
+        <div><img src="images/network-2.png" alt="network expertise"><div class="caption">NETWORK & INDUSTRY EXPERTISE</div></div>
+        <div><img src="images/partnership-2.png" alt="partnerships"><div class="caption">STRATEGIC PARTNERSHIPS</div></div>
+        <div><img src="images/business-development-2.png" alt="business development"><div class="caption">BUSINESS DEVELOPMENT</div></div>
+        <div><img src="images/product-expansion-2.png" alt="product expansion"><div class="caption">PRODUCT & SERVICE EXPANSION</div></div>
+        <div><img src="images/supply-2.png" alt="supply procurement"><div class="caption">SUPPLY PROCUREMENT</div></div>
+        <div><img src="images/geography-2.png" alt="geographic expansion"><div class="caption">GEOGRAPHIC EXPANSION</div></div>
+        <div><img src="images/process-improvements-2.png" alt="process improvements"><div class="caption">PROCESS IMPROVEMENTS</div></div>
+        <div><img src="images/systems-upgrades-2.png" alt="system upgrades"><div class="caption">SYSTEM UPGRADES</div></div>
       </div>
     </section>
 
@@ -79,18 +75,18 @@
     <section id="focus" class="section">
       <h2>FOCUS</h2>
       <p>Currently we are seeking e-commerce focused single U.S. or Asia-based businesses with $0–5 million in annual revenues. Generally, we are industry-agnostic and partner with businesses fitting these criteria:</p>
-      <div class="approach-grid">
-        <div><img src="images/asset-light-3.png" alt=""><div class="caption">FRAGMENTED MARKET</div></div>
-        <div><img src="images/distinct-growth.png" alt=""><div class="caption">DISTINCT GROWTH AVENUES</div></div>
-        <div><img src="images/b-2-b.png" alt=""><div class="caption">B2B SALES AND/OR SERVICES</div></div>
-        <div><img src="images/postive-cash-flow.png" alt=""><div class="caption">HISTORY OF POSITIVE CASH FLOW</div></div>
-        <div><img src="images/defensible-position.png" alt=""><div class="caption">DEFENSIBLE POSITION</div></div>
-        <div><img src="images/value-proposition.png" alt=""><div class="caption">SIMPLE VALUE PROPOSITION</div></div>
+      <div class="icon-grid">
+        <div><img src="images/asset-light-3.png" alt="fragmented market"><div class="caption">FRAGMENTED MARKET</div></div>
+        <div><img src="images/distinct-growth.png" alt="distinct growth"><div class="caption">DISTINCT GROWTH AVENUES</div></div>
+        <div><img src="images/b-2-b.png" alt="b2b"><div class="caption">B2B SALES AND/OR SERVICES</div></div>
+        <div><img src="images/postive-cash-flow.png" alt="positive cash"><div class="caption">HISTORY OF POSITIVE CASH FLOW</div></div>
+        <div><img src="images/defensible-position.png" alt="defensible position"><div class="caption">DEFENSIBLE POSITION</div></div>
+        <div><img src="images/value-proposition.png" alt="value proposition"><div class="caption">SIMPLE VALUE PROPOSITION</div></div>
       </div>
     </section>
 
     <!-- TEAM -->
-    <section id="team" class="section">
+    <section id="team" class="section alt-bg">
       <h2>TEAM</h2>
       <div class="team-member">
         <h3>JOE SHOFNER</h3><h4>MANAGING PARTNER</h4>
@@ -104,27 +100,36 @@
       </div>
     </section>
 
-    <!-- CONTACT (with banner-2) -->
+    <!-- CONTACT (banner-2 behind form) -->
     <section id="contact" class="section contact-section">
-      <div class="contact-banner"><img src="images/banner-2.jpg" alt="Contact Banner" /></div>
-      <h2>CONTACT</h2>
-      <address>848 North Rainbow Blvd<br/>Las Vegas, Nevada 89107<br/><a href="tel:+17027081833">+1 702 708 1833</a></address>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Message" required></textarea>
-        <button type="submit">SEND</button>
-      </form>
+      <div class="contact full-bleed">
+        <img src="images/banner-2.jpg" alt="Contact Banner" class="contact-bg" />
+        <div class="contact-overlay"></div>
+        <div class="contact-content">
+          <h2>CONTACT</h2>
+          <address>
+            848 North Rainbow Blvd<br>
+            Las Vegas, Nevada 89107<br>
+            <a href="tel:+17027081833">+1 702 708 1833</a>
+          </address>
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <!-- ENGAGEMENTS -->
-    <section id="engagements" class="section">
+    <section id="engagements" class="section alt-bg">
       <h2>ENGAGEMENTS</h2>
       <div class="engagements-grid">
-        <div><span>Active</span><img src="images/Montessori Mama Logo - Instagram.jpg" alt=""/></div>
-        <div><span>Exited</span><img src="images/AIPShenyangLogoJPG.jpg" alt=""/></div>
-        <div><span>Active</span><img src="images/Dinoland for mtn Goat Cap.jpg" alt=""/></div>
-        <div><span>Active</span><img src="images/Pure Japan Favicon.png" alt=""/></div>
+        <div><span>Active</span><img src="images/Montessori Mama Logo - Instagram.jpg" alt="Montessori Mama"/></div>
+        <div><span>Exited</span><img src="images/AIPShenyangLogoJPG.jpg" alt="AIPS Shenyang"/></div>
+        <div><span>Active</span><img src="images/Dinoland for mtn Goat Cap.jpg" alt="Dinoland"/></div>
+        <div><span>Active</span><img src="images/Pure Japan Favicon.png" alt="Pure Japan"/></div>
       </div>
     </section>
   </main>
