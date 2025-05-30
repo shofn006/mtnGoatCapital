@@ -47,30 +47,33 @@ nav a { text-decoration:none; color:#333; text-transform:uppercase; font-size:0.
   background:var(--dark-overlay);
 }
 .hero-text {
-  position:absolute; top:50%; left:15%;
-  transform:translateY(-50%);
-  color:#fff; line-height:1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  line-height: 1;
 }
 .hero-text .line1 {
-  font:300 1.8rem/1 Arial,sans-serif;
-  text-transform:uppercase;
+  font: 300 1.8rem/1 Arial, sans-serif;
+  text-transform: uppercase;
 }
 .hero-text .line2 {
-  font:700 5rem/1 Arial,sans-serif;
-  text-transform:uppercase;
-  margin:-0.5rem 0;
+  font: 700 5rem/1 Arial, sans-serif;
+  text-transform: uppercase;
 }
 .hero-text .line3 {
-  font:500 2.5rem/1 Arial,sans-serif;
-  text-transform:uppercase;
-  display:flex; align-items:center;
-}
-.hero-text .mgmt {
-  display:inline-flex; align-items:center;
-  margin-left:1rem; font-size:1.8rem;
+  font: 500 2.5rem/1 Arial, sans-serif;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
 }
 .hero-text .goat-inline {
-  width:36px; margin-left:0.5rem; position:relative; top:-6px;
+  width: 36px;
+  margin-left: 0.5rem;
+  position: relative;
+  top: -6px;
 }
 
 /* MAIN SECTIONS */
@@ -181,4 +184,31 @@ main { padding-top:80vh }
 footer {
   text-align:center; padding:20px 0;
   background:#f9f9f9; color:#666; font-size:0.8rem;
+}
+/* NAVY FULL-WIDTH SECTION */
+.section--dark {
+  background: #002c5f !important;
+  color: #fff !important;
+}
+.section--dark .section-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* FULL-BLEED HELPER (for hero + dark sections) */
+.full-bleed {
+  position: relative;
+  width: 100vw;
+  left: 50%; 
+  margin-left: -50vw;
+  right: 50%;
+  margin-right: -50vw;
+  overflow: hidden;
+}
+
+/* ICONS TURN WHITE */
+.section--dark .icon-grid img,
+.section--dark .engagements-grid img {
+  filter: brightness(0) invert(1);
 }
