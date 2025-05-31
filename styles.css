@@ -187,6 +187,7 @@ nav a {
   font-size: 1rem;
   color: inherit;
   margin-bottom: 5px;
+  font-style: italic;
 }
 .section--dark a {
   color: inherit;
