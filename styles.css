@@ -239,6 +239,7 @@ nav a {
   border-radius: 8px;
   overflow: hidden;       /* hide iframe’s own scrollbars—iframe will scale */
   z-index: 2;
+  text-align: center;
 }
 
 /* Ensure the embedded iframe fills its parent container exactly */
