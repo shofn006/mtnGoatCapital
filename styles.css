@@ -140,7 +140,16 @@ nav a {
   margin: 0 auto;
   padding: 60px 20px;
 }
-
+/* ————————— Center all section headings ————————— */
+.section h2,
+.section--dark h2 {
+  text-align: center;
+  /* All the other H2 styles you already have: */
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
 /* --------------------------------------------------------
    ICON GRID (3 columns)
 -------------------------------------------------------- */
