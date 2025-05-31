@@ -354,3 +354,34 @@ footer {
   text-transform: uppercase;
   font-size: 0.9rem;
 }
+
+/* ------------ THREE‐COLUMN TEXT GRID UNDER APPROACH -------------- */
+.text-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 40px 0 60px; /* space above icons */
+}
+.text-item h3 {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: 0.02em;
+  color: #fff; /* white on navy */
+}
+.text-item p {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+.text-grid .text-item {
+  /* ensure each block is left‐aligned within its column */
+  text-align: left;
+}
+/* Responsive: stack to one column on small screens */
+@media (max-width: 800px) {
+  .text-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
