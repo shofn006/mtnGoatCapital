@@ -274,7 +274,6 @@ nav a {
   max-width: 100px;
   display: block;
   margin: 5px auto;
-  filter: brightness(0) invert(1);
 }
 .engagements-grid span {
   display: block;
