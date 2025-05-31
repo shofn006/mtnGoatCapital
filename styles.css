@@ -295,3 +295,62 @@ footer {
   color: #666;
   font-size: 0.8rem;
 }
+
+/* --------------------------------------------------------
+   FULL-WIDTH NAVY SECTION (APPROACH, TEAM, ENGAGEMENTS etc.)
+-------------------------------------------------------- */
+.section--dark {
+  background-color: #002c5f;
+  color: #fff;
+  /* no padding or margin on the section itself—inner handles that */
+}
+.section--dark h2,
+.section--dark .caption,
+.section--dark p,
+.section--dark address,
+.section--dark .team-member h3,
+.section--dark .team-member h4 {
+  color: #fff; /* force white text/icons inside */
+}
+
+/* Centered inner container within full-bleed wrapper */
+.section-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+/* full-bleed makes the section background stretch edge-to-edge */
+.full-bleed {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+  right: 50%;
+  margin-right: -50vw;
+  overflow: hidden;
+}
+
+/* Icon grid: 3 columns, evenly spaced */
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+.icon-grid img {
+  display: block;
+  margin: 0 auto 10px;
+  max-width: 80px; /* adjust if icons are too large */
+}
+
+/* Invert icons on navy background to white */
+.section--dark .icon-grid img {
+  filter: brightness(0) invert(1);
+}
+.caption {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
