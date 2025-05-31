@@ -1,6 +1,6 @@
 :root {
   --dark-blue: #002c5f;
-  --dark-overlay: rgba(0, 0, 0, 0.3);
+  --dark-overlay: rgba(0, 0, 0, 0.2);
 }
 
 /* --------------------------------------------------------
@@ -212,7 +212,7 @@ nav a {
   /* if your banner-2 image is a fixed-height design: */
   height: 900px;       /* match .contact min-height (or whatever you choose) */
   object-fit: cover;
-  filter: brightness(0.6); /* darken background a bit */
+  filter: brightness(0.8); /* darken background a bit */
 }
 
 .contact-overlay {
