@@ -16,11 +16,10 @@ body {
   color: #333;
   line-height: 1.6;
 }
-/* Make room for the fixed header */
 body::before {
   content: "";
   display: block;
-  height: 60px; /* same as your header height */
+  height: 60px;
 }
 header {
   position: fixed;
@@ -29,32 +28,20 @@ header {
   right: 0;
   background: #fff;
   border-bottom: 1px solid #eee;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 40px;
+  padding: 10px 20px;
   z-index: 1000;
-}
-.branding {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.site-logo {
-  max-height: 50px;
-}
-.site-title {
-  font-size: 1.2rem;
-  font-weight: bold;
 }
 
 /* Mobile menu button */
 .menu-toggle {
-  display: none;
   background: none;
   border: none;
   cursor: pointer;
   padding: 10px;
+  display: none;
 }
 .menu-toggle span {
   display: block;
@@ -63,6 +50,20 @@ header {
   background-color: var(--dark-blue);
   margin: 5px 0;
   transition: 0.3s;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.site-logo {
+  max-height: 50px;
+}
+.site-title {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 nav ul {
@@ -405,17 +406,34 @@ footer {
 -------------------------------------------------------- */
 @media (max-width: 1024px) {
   header {
-    padding: 10px 20px;
+    grid-template-columns: auto 1fr auto;
   }
   
   .site-title {
     display: none;
   }
+
+  .branding {
+    justify-self: center;
+  }
 }
 
 @media (max-width: 800px) {
+  header {
+    grid-template-columns: auto 1fr auto;
+  }
+
   .menu-toggle {
     display: block;
+    justify-self: start;
+  }
+
+  .branding {
+    justify-self: center;
+  }
+
+  .login {
+    justify-self: end;
   }
 
   nav {
