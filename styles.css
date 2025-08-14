@@ -214,6 +214,9 @@ nav a {
   margin-bottom: 5px;
   font-style: italic;
 }
+.team-member p {
+  margin-bottom: 20px;
+}
 .section--dark a {
   color: inherit;
 }
